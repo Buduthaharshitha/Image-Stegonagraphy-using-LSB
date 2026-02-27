@@ -1,6 +1,7 @@
 **🔐 Image Steganography using LSB Technique in C**
 
 **Project Overview**
+
 This project implements Image Steganography using the Least Significant Bit (LSB) technique in C programming. It enables secure embedding and extraction of secret text data inside a 24-bit BMP image without causing visible distortion.
 Steganography is the technique of hiding confidential information within another digital medium such as an image, audio, or video file. In this implementation, secret text is embedded into a BMP image by modifying only the least significant bits of pixel values, ensuring the image appears visually unchanged.
 
@@ -50,12 +51,19 @@ The decoding process performs the reverse operation:
 **5. Project Structure**
 
 ├── main.c        → Entry point & command-line handling.
+
 ├── encode.c      → LSB embedding implementation.
+
 ├── encode.h      → Encoding declarations.
+
 ├── decode.c      → LSB extraction implementation.
+
 ├── decode.h      → Decoding declarations.
+
 ├── common.h      → Shared structures & macros.
+
 ├── beautiful.bmp → Sample cover image.
+
 ├── secret.txt    → Sample secret message.
 
  **6.Compilation**
@@ -71,7 +79,7 @@ The decoding process performs the reverse operation:
     ./stego -d output.bmp decoded.txt
    Extracts hidden data and saves it into decoded.txt.
 
-** Key Concepts Implemented**
+** **Key Concepts Implemented****
 
 -->Least Significant Bit (LSB) embedding
 
